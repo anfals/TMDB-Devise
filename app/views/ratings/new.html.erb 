@@ -1,0 +1,6 @@
+<%= form_tag(ratings_path, method: 'post') do %>
+		<%= text_field_tag(:user_id) %>
+		<%= text_field_tag(:movie_id) %>
+		<%= text_field_tag(:thumbs_up) %>
+		<%= submit_tag("Search") %>
+<% end %>

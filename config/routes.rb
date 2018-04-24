@@ -6,4 +6,11 @@ Rails.application.routes.draw do
   get "movies/new"
   get "movies/:id", to: "movies#show", as: "show"
   post "movies", to: "movies#create"
+
+  get "users/:id", to: "users#show"
+
+  get "ratings", to: "ratings#index"
+  get "ratings/new"
+  get "ratings/:id", to: "ratings#show"
+  post "ratings", to: "ratings#create"
 end

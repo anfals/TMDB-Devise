@@ -1,0 +1,6 @@
+<h1>Ratings</h1>
+<% @ratings.each do |m| %>
+	<h1>user <%= m.user_id%></h1>
+	<h1>movie <%= m.movie_id%></h1>
+	<h1>thumbs_up <%= m.thumbs_up%></h1>
+<% end %>

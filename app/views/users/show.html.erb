@@ -1,0 +1,11 @@
+<h1>Me</h1>
+<% @my_ratings.each do |m| %>
+	<h1>user <%= m.user_id%></h1>
+	<h1>movie <%= m.movie_id%></h1>
+	<h1>thumbs_up <%= m.thumbs_up%></h1>
+<% end %>
+<h1> Recommended </h1>
+<% @recommended_movies.each do |m| %>
+	<h1>title <%= m[0] %></h1>
+	<h1>count <%= m[1] %></h1>
+<% end %>

@@ -10,6 +10,11 @@ class TmdbClient
 		ret
 	end 
 
+	def get_similar_movies(id)
+		#puts(Tmdb::Movie.popular.each {|m| puts m.title, m.id})
+		Tmdb::Movie.similar_movies(id)
+	end
+
 	def get_movie_title(id)
 		Tmdb::Movie.detail(id)['original_title']
 	end
