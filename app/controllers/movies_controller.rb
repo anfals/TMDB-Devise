@@ -15,10 +15,9 @@ class MoviesController < ApplicationController
 	end 
 
 	def show
-		puts current_user.email
-		@movie = Movie.where("movie_db_id" == params[:id].to_i)
 		@client = TmdbClient.new
 		@id = params[:id].to_i
+		@cur_movie = Movie.where(movie_db_id: @id).first
 	end
 
 
