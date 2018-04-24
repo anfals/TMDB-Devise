@@ -87,46 +87,104 @@ r32 = Rating.create(thumbs_up: true, user_id: 2, movie_id: movie32.id)
 r33 = Rating.create(thumbs_up: true, user_id: 2, movie_id: movie33.id)
 r34 = Rating.create(thumbs_up: true, user_id: 2, movie_id: movie34.id)
 
+
+
+#Popular Movies
+movie35 = Movie.create(movie_db_id: 6477)
+movie36 = Movie.create(movie_db_id: 269149)
+movie37 = Movie.create(movie_db_id: 354912)
+movie38 = Movie.create(movie_db_id: 228326)
+movie39 = Movie.create(movie_db_id: 10191)
+movie40 = Movie.create(movie_db_id: 9986)
+movie41 = Movie.create(movie_db_id: 862)
+movie42 = Movie.create(movie_db_id: 116149)
+movie43 = Movie.create(movie_db_id: 278927)
+movie44 = Movie.create(movie_db_id: 11224)
+movie45 = Movie.create(movie_db_id: 127380)
+movie46 = Movie.create(movie_db_id: 335797)
+movie47 = Movie.create(movie_db_id: 140300)
+movie48 = Movie.create(movie_db_id: 9836)
+movie49 = Movie.create(movie_db_id: 151960)
+movie50 = Movie.create(movie_db_id: 62211)
+movie51 = Movie.create(movie_db_id: 260514)
+movie52 = Movie.create(movie_db_id: 585)
+movie53 = Movie.create(movie_db_id: 808)
+movie54 = Movie.create(movie_db_id: 10144)
+movie55 = Movie.create(movie_db_id: 109445)
+movie56 = Movie.create(movie_db_id: 10674)
+movie57 = Movie.create(movie_db_id: 812)
+
+
+
+
+
+
+r35 = Rating.create(thumbs_up: true, user_id: 3, movie_id: movie35.id)
+r36 = Rating.create(thumbs_up: true, user_id: 3, movie_id: movie36.id)
+r37 = Rating.create(thumbs_up: true, user_id: 3, movie_id: movie37.id)
+r38 = Rating.create(thumbs_up: true, user_id: 3, movie_id: movie38.id)
+r39 = Rating.create(thumbs_up: true, user_id: 3, movie_id: movie39.id)
+r40 = Rating.create(thumbs_up: true, user_id: 3, movie_id: movie40.id)
+r41 = Rating.create(thumbs_up: true, user_id: 3, movie_id: movie41.id)
+r42 = Rating.create(thumbs_up: true, user_id: 3, movie_id: movie42.id)
+r43 = Rating.create(thumbs_up: true, user_id: 3, movie_id: movie43.id)
+r44 = Rating.create(thumbs_up: true, user_id: 3, movie_id: movie44.id)
+r45 = Rating.create(thumbs_up: true, user_id: 3, movie_id: movie45.id)
+r46 = Rating.create(thumbs_up: true, user_id: 3, movie_id: movie46.id)
+r47 = Rating.create(thumbs_up: true, user_id: 3, movie_id: movie47.id)
+r48 = Rating.create(thumbs_up: true, user_id: 3, movie_id: movie48.id)
+r49 = Rating.create(thumbs_up: true, user_id: 3, movie_id: movie49.id)
+r50 = Rating.create(thumbs_up: true, user_id: 3, movie_id: movie50.id)
+r51 = Rating.create(thumbs_up: true, user_id: 3, movie_id: movie51.id)
+r52 = Rating.create(thumbs_up: true, user_id: 3, movie_id: movie52.id)
+r53 = Rating.create(thumbs_up: true, user_id: 3, movie_id: movie53.id)
+r54 = Rating.create(thumbs_up: true, user_id: 3, movie_id: movie53.id)
+r55 = Rating.create(thumbs_up: true, user_id: 3, movie_id: movie53.id)
+r56 = Rating.create(thumbs_up: true, user_id: 3, movie_id: movie53.id)
+r57 = Rating.create(thumbs_up: true, user_id: 3, movie_id: movie53.id)
+
+
+
+
+
 # Fifty Shades Freed
-# 337167
+# 
 # Zootopia
-# 269149
+# 
 # Coco
-# 354912
+# 
 # Rampage
-# 427641
+# 
 # Black Panther
-# 284054
-# Star Wars: The Last Jedi
-# 181808
+# 
 # Avengers: Infinity War
-# 299536
+# 
 # Beauty and the Beast
-# 321612
+# 
 # A Quiet Place
-# 447332
+# 
 # Geostorm
 # 274855
 # The Maze Runner
 # 198663
 # Pitch Perfect 3
-# 353616
+# 
 # Thor: Ragnarok
-# 284053
+# x
 # Ready Player One
-# 333339
+# 
 # Sleight
 # 347882
 # Guardians of the Galaxy
-# 118340
+# 
 # 15+ IQ Krachoot
 # 483877
 # The Avengers
-# 24428
+# 
 # John Wick
 # 245891
 # The Shape of Water
-# 399055
+# 
 
 
 

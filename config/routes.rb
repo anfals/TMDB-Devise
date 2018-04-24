@@ -9,8 +9,7 @@ Rails.application.routes.draw do
 
   get "recommendations", to: "recommendations#show"
 
-  get "ratings", to: "ratings#index"
   get "ratings/new"
-  get "ratings/:id", to: "ratings#show"
+  get "ratings", to: "ratings#show"
   post "ratings", to: "ratings#create"
 end

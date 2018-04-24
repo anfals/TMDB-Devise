@@ -6,7 +6,8 @@ class RecommendationsController < ApplicationController
 		puts(@id)
 		@my_ratings = Rating.where("user_id = ? AND thumbs_up = ?", @id, true)
 		dict = {}
-		#@client.get_similar_movies(11).each {|m| puts m.title, m.id}
+		#@client.get_similar_movies(808).each {|m| puts m.title, m.id}
+		#228326, 10191, 862, 278927, 11224, 127380, 335797, 
 		@my_ratings.each do |rating|
 			movie = Movie.where("id = ?", rating.movie_id).take
 			puts(movie.movie_db_id)
@@ -19,6 +20,8 @@ class RecommendationsController < ApplicationController
 				end
 			end
 		end
+
 		@recommended_movies = dict.sort_by { |_, v| -v }[0..5]
 	end
 end
+

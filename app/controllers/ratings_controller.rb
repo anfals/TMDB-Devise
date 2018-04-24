@@ -1,7 +1,4 @@
 class RatingsController < ApplicationController
-	def index
-		@ratings = Rating.all
-	end 
 
 	def create
 		puts params[:movie_id].to_i
@@ -16,7 +13,11 @@ class RatingsController < ApplicationController
 	end 
 
 	def show
-		@rating = Rating.where("user_id" == params[:user_id].to_i)
-		@id = params[:id].to_i
+		@client = TmdbClient.new
+		@ratings = Rating.where('user_id = ?', current_user.id)
+		@movies = {}
+		@ratings.each do |r|
+			@movies[@client.get_movie_title(Movie.where('id = ?', r.movie_id).first.movie_db_id)] = r.thumbs_up
+		end
 	end
 end
