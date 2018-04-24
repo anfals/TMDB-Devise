@@ -12,6 +12,7 @@ class TmdbClient
 
 	def get_similar_movies(id)
 		#puts(Tmdb::Movie.popular.each {|m| puts m.title, m.id})
+		puts(id)
 		Tmdb::Movie.similar_movies(id)
 	end
 
