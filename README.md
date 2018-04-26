@@ -1,24 +1,37 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+SAMPLE WRITEUP
 
-Things you may want to cover:
+Title: The Movie House
+Team Members: Anfal Siddiqui, Nabeel Mamoon, Josh Zeitsoff, Clement Ng
+Demo Link: [upload the screencast]
 
-* Ruby version
+Idea: Movie forum where you can create pages for movies, pulling in info about the movie from the Movie Database API. Allows users to have comment threads about movie and offer ratings. Also creates a scoreboard based off of user comments, likes/dislikes. 
 
-* System dependencies
+Models and Description:
+User
+-has name, email
+-has_many likes
 
-* Configuration
+Movie 
+-Has title, poster, trailer, casting info
+-Have many likes
+-Has rating (likes/total)
 
-* Database creation
+Rating  
+-Has boolean (thumbs up or down)
+belongs to user, belongs to movie (polymorphic)
 
-* Database initialization
+Features:
+-Users login 
+-Users can create a page for a movie (data pulled from API)
+-Users can thumbs up/thumbs down a movie
+-Movies have score (ratings)
 
-* How to run the test suite
+Division of Labor:
+-Anfal: Moviedb gem work, rating system, front-end
+-Josh: Moviedb gem work, Recommendation system
+-Clement: Devise gem work, front-end
+-Nabeel: N/A
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
