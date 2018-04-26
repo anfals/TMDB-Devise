@@ -1,9 +1,19 @@
-<h1>Title: <%= @client.get_movie_title(@id)%></h1>
-<p>Overview: <%= @client.get_movie_overview(@id)%></p>
-<img src=<%= @client.get_poster_path(@id)%>>
+<style type="text/css">
+</style>
 
-<%= form_tag(ratings_path, method: 'post') do %>
-		<%= check_box_tag("liked", value = "1", checked = false) %>
-		<%= hidden_field_tag("movie_id", value = @cur_movie.id)  %>
-		<%= submit_tag("Vote!") %>
-<% end %>
+
+<div class="container">
+	<h1 class="display-4">
+		Title: <%= @client.get_movie_title(@id)%>
+	</h1>
+	<p>Overview: <%= @client.get_movie_overview(@id)%></p>
+	<img src=<%= @client.get_poster_path(@id)%> style="width:500px; height:600px">
+
+
+	<%= form_tag(ratings_path, method: 'post') do %>
+			<%= check_box_tag("liked", value = "1", checked = false) %>
+			<%= hidden_field_tag("movie_id", value = @cur_movie.id)  %>
+
+			<%= submit_tag("Vote!") %>
+	<% end %>
+</div>
