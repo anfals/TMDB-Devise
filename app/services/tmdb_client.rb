@@ -25,7 +25,12 @@ class TmdbClient
 	end
 
 	def get_poster_path(id)
-		"https://image.tmdb.org/t/p/original" +	Tmdb::Movie.detail(id)['poster_path']
+		poster_path = Tmdb::Movie.detail(id)['poster_path']
+		default = "https://valmorgan.co.nz/wp-content/uploads/2016/06/default-movie-1-3.jpg"
+		if poster_path == nil
+			return default
+		end
+		return "https://image.tmdb.org/t/p/original" +	Tmdb::Movie.detail(id)['poster_path']
 	end
 
 end 
