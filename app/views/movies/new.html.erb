@@ -1,4 +1,21 @@
-<%= form_tag(movies_path, method: 'post') do %>
-		<%= text_field_tag(:q) %>
-		<%= submit_tag("Search") %>
-<% end %>
+<div class="container">
+  <!-- Content here -->
+</div>
+
+<div class="container">
+	<div class="jumbotron">
+		<h1 class="display-4">Search for a Movie!</h1>
+		<p class="lead">Use the search bar to get information on your favorite film!</p>
+		<hr class="my-4">
+	</div>
+
+	<%= form_tag(movies_path, method: 'post') do %>
+			<div class="input-group">
+			      <span class="input-group-btn">
+			        <input class="btn btn-primary" type="submit" name="commit" value="Search" data-disable-with="Search" />
+			      </span>
+			      <input type="text" class="form-control" name="q" id="q" placeholder="The Avengers"/>
+			</div>
+	<% end %>		
+</div>
+
