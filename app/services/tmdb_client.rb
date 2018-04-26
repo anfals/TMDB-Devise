@@ -30,7 +30,7 @@ class TmdbClient
 		if poster_path == nil
 			return default
 		end
-		return "https://image.tmdb.org/t/p/original" +	Tmdb::Movie.detail(id)['poster_path']
+		return "https://image.tmdb.org/t/p/original" + poster_path
 	end
 
 end 
