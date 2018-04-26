@@ -1,5 +1,20 @@
-<h1>Movies</h1>
+<div class="container">
+  <!-- Content here -->
+</div>
+<div class="container">
+	<div class="jumbotron">
+		<h1 class="display-4">The Movie House</h1>
+		<p class="lead">Click a poster to go to that movie's page</p>
+		<hr class="my-4">
+	</div>	
+</div>
 <% @movies.each do |m| %>
-	<h1>Title: <%= @client.get_movie_title(m.movie_db_id)%></h1>
-	<%= link_to image_tag(@client.get_poster_path(m.movie_db_id)), show_path(id: m.movie_db_id)%>
+	<div class="container">
+		<h1 class="text-center"><%= @client.get_movie_title(m.movie_db_id)%></h1>
+		<div class="text-center">
+	  		<a href=<%= show_path(id: m.movie_db_id) %>>
+	  			<img src=<%= @client.get_poster_path(m.movie_db_id)%> style="width: 500px; height: 700px" class="rounded">
+	  		</a>
+		</div>		
+	</div>
 <% end %>
