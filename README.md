@@ -24,10 +24,10 @@ Rating
 
 Features:
 * Users login 
-* Users can create a page for a movie (data pulled from API)
+* Users can create a page for a movie (data pulled from API) by searching using the search bar
 * Users can thumbs up/thumbs down a movie
 * Movies have score (ratings)
-* Recommended movies will show up
+* Recommended movies will show up based off of user ratings, in conjunction with the API
 
 Division of Labor:
 * Anfal: Moviedb gem work, rating system, front-end
