@@ -9,7 +9,7 @@ class RatingsController < ApplicationController
 		@rating = Rating.new(user_id: current_user.id, movie_id: params[:movie_id].to_i, thumbs_up: checked)
 		@rating.save
 		#redirect_to rating_path(user_id: current_user.id)
-		redirect_to ratings_path(user_id: current_user.id)
+		redirect_to recommendations_path
 	end 
 
 	def show
