@@ -3,7 +3,7 @@ Title: The Movie House
 
 Team Members: Anfal Siddiqui, Nabeel Mamoon, Josh Zeitsoff, Clement Ng
 
-Demo Link: https://drive.google.com/file/d/1ejCB-zJcBg4LbKumTiV5XeLhFbTLGvH6/view
+Demo Link: https://youtu.be/HoJfB9taHSM
 
 Idea: A movie forum where you can create pages for movies, pulling in info about the movie from the Movie Database API. Allows users to thumbs up and down movies. Also can recommend similar movies to users. 
 
