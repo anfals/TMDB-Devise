@@ -8,6 +8,7 @@ Demo Link: [upload the screencast]
 Idea: A movie forum where you can create pages for movies, pulling in info about the movie from the Movie Database API. Allows users to thumbs up and down movies. Also can recommend similar movies to users. 
 
 Models and Description:
+
 User
 * has name, email
 * has_many likes
