@@ -1,6 +1,11 @@
 class MoviesController < ApplicationController
 	def index
-		@movies = Movie.all
+		@ratings = Rating.where('user_id = ?', current_user.id)
+		@movies = []
+		@ratings.each do |r|
+			@movies.append(Movie.where('id = ?', r.movie_id).first)
+		end
+		#@movies = Movie.where('id = ?', )
 		@client = TmdbClient.new
 	end 
 
